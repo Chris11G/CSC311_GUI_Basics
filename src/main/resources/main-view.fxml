@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
 
 
-<AnchorPane prefHeight="500.0" prefWidth="700.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MainController">
+<AnchorPane prefHeight="752.0" prefWidth="700.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MainController">
    <children>
       <Label layoutX="197.0" layoutY="84.0" rotate="-10.0" styleClass="name-label" text="Christopher Gonzalez" />
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="276.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
@@ -17,5 +22,16 @@
       </ImageView>
       <Button fx:id="myButton" layoutX="324.0" layoutY="197.0" mnemonicParsing="false" onAction="#handleButtonClick" text="Click Me!" />
       <Label fx:id="messageLabel" layoutX="296.0" layoutY="165.0" text="Dont Click The Button!" />
+      <Circle fill="#a1b74a" layoutX="122.0" layoutY="265.0" radius="100.0" stroke="#431919" strokeType="INSIDE" strokeWidth="50.0" />
+      <ProgressBar layoutX="47.0" layoutY="41.0" prefWidth="250.0" progress="0.75" />
+      <Label layoutX="130.0" layoutY="23.0" text="JavaFX Progress" />
+      <AreaChart layoutX="46.0" layoutY="440.0" title="Random Chart">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </AreaChart>
    </children>
 </AnchorPane>
