@@ -1,0 +1,6 @@
+.name-label {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2E5AAC;
+    -fx-font-family: "Arial";
+}
